@@ -3,7 +3,7 @@
  * 质量信息台账
  * 新八轴牵引模块返厂修台账
  */
-var read=require("./readExcelForThree.js");
+var read=require("./readExcel.js");
 var pathName="../resource/test3.xls";
 var tableHead=[];//表头信息
 //序号

@@ -13,8 +13,6 @@ tableHead.push("reportNumber");
 tableHead.push("belongSection");
 //产品寿命阶段
 tableHead.push("proLifeStage");
-//检修地点
-tableHead.push("overhaulLocation");
 //发现时间
 tableHead.push("findTime");
 //产品型号

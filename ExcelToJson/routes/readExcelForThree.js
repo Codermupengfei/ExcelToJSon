@@ -67,12 +67,16 @@ function readExcel(fileName,tableHead,JsonName) {
 
 
             }
-            if(flag==1)
-            {
+            if(flag==1){
                 i++;
-                continue;
+            }else {
+                flag=1;
             }
+            continue;
+
+
         }
+
         var m=0;
         for(j=j;j<=value.length-1;j++){
             if(m<col.length&&j==col[m]&&col_num>0){
@@ -81,6 +85,7 @@ function readExcel(fileName,tableHead,JsonName) {
                     joinString+=excelObj[row+1][j]+":"+value[j]+",";//对列中的字符串进行拼接
                 }
 				joinString+=excelObj[row+1][j]+":"+value[j];
+                j++;
                 value[--j]=joinString;
                 m++;
 
